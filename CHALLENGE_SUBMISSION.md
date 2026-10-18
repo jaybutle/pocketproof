@@ -34,9 +34,9 @@ Client paperwork contains commercially sensitive information. Running an open-we
 
 ## Links and feedback
 
-- **Demo:** `[add a real demo link; do not use a hosted service for real private documents]`
-- **Repository:** `[add the public repository URL]`
-- **Screenshots:** `[capture the actual dashboard and document review screen after a local run]`
+- **Demo:** Vercel static preview configured in the repository; a live URL will be added after importing the repo into the Vercel account.
+- **Repository:** https://github.com/jaybutle/pocketproof
+- **Run the fictional read-only preview locally:** `npm run dev:demo` (after `npm install`).
 - **User feedback:** No external user feedback has been collected.
 - **Business results:** No customers or revenue have been recorded.
 

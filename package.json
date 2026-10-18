@@ -7,7 +7,9 @@
     "dev": "concurrently -k \"npm:dev:api\" \"npm:dev:web\"",
     "dev:api": "node server/index.js",
     "dev:web": "vite --host 127.0.0.1",
+    "dev:demo": "vite --host 127.0.0.1 --mode demo --open /demo.html",
     "build": "vite build",
+    "build:demo": "vite build --mode demo",
     "test": "vitest run server/ai.test.js src/App.test.tsx && node --test server/store.test.js server/validation.test.js",
     "start": "node server/index.js"
   },

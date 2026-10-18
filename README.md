@@ -18,6 +18,14 @@ ProofPocket is a local-first invoice and paperwork workspace for freelancers and
 - CSV and JSON export, local deletion controls, sample data for an interactive demo.
 - No telemetry and no external AI provider. The Vite dev server and API bind to loopback.
 
+## Public preview on Vercel
+
+The Vercel configuration builds a separate static, read-only preview with fictional records. It has no API routes, database, uploads, sign-in, or hosted AI connection. It is suitable for trying the interface, not for storing real client paperwork.
+
+To preview that build locally, run `npm run dev:demo`. To build it, run `npm run build:demo`. The normal `npm run dev` and `npm run build` commands continue to use the full local app. The Vercel artifact uses a separate entry point that does not import the local API app.
+
+Import `jaybutle/pocketproof` into Vercel with the project root set to `.`. The checked-in `vercel.json` selects the static demo build and configures client-side route fallback. No environment variables are required.
+
 ## macOS setup
 
 ### Requirements
